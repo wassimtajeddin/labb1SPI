@@ -10,7 +10,6 @@
       <module>consumer</module>
         <module>service</module>
         <module>provider</module>
-        <module>service</module>
     </modules>
     <groupId>org.example</groupId>
     <artifactId>multimodule</artifactId>
