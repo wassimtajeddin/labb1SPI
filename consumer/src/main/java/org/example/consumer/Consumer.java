@@ -1,6 +1,7 @@
 package org.example.consumer;
 
-import java.security.spec.RSAOtherPrimeInfo;
+import org.example.service.Greeting;
+
 import java.util.ServiceLoader;
 
 public class Consumer {
