@@ -4,5 +4,6 @@ import org.example.service.Greeting;
 
 module org.example.provider {
     requires org.example.service;
+    exports org.example.provider;
     provides Greeting with SwedishGreeting,EnglishGreeting ;
 }
