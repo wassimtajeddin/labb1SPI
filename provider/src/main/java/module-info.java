@@ -1,9 +1,9 @@
-import org.example.provider.EnglishGreeting;
-import org.example.provider.SwedishGreeting;
-import org.example.service.Greeting;
+import org.example.provider.KiloGramToGram;
+import org.example.provider.MeterToFeet;
+import org.example.service.Convert;
 
 module org.example.provider {
     requires org.example.service;
     exports org.example.provider;
-    provides Greeting with SwedishGreeting,EnglishGreeting ;
+    provides Convert with KiloGramToGram, MeterToFeet;
 }
