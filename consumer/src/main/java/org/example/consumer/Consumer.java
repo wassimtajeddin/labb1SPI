@@ -1,5 +1,7 @@
 package org.example.consumer;
-import org.example.service.Convert;
+import org.example.service.ConvertKgToG;
+import org.example.service.ConvertMToFeet;
+
 import java.util.ServiceLoader;
 
 
@@ -7,14 +9,16 @@ public class Consumer {
 public static void main(String[] args){
 
 
-    ServiceLoader<Convert> converts = ServiceLoader.load(Convert.class);
-    System.out.println("Skriv vikten i kilogram");
-        for(var convert:converts){
-        System.out.println(convert.convert());
-        System.out.println("Skriv längden i meter");
+    ServiceLoader<ConvertKgToG> convertsKg = ServiceLoader.load(ConvertKgToG.class);
+    System.out.println("Skriv vikten i kg!");
+        for(var convert:convertsKg){
+        System.out.println(convert.kgToG());
             }
-
-
+    ServiceLoader<ConvertMToFeet> convertsM = ServiceLoader.load(ConvertMToFeet.class);
+    System.out.println("Skriv längden i meter!");
+    for(var convert:convertsM){
+        System.out.println(convert.mToFeet());
+    }
     }
     }
 
