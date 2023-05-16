@@ -1,8 +1,5 @@
 package org.example.provider;
-
-import org.example.service.ConvertKgToG;
 import org.example.service.ConvertMToFeet;
-
 import java.util.Scanner;
 
 public class MeterToFeet implements ConvertMToFeet {
